@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tes</title>
+</head>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){
+				$('#box').css("background", "blue").css("width","1000px");
+				$('#box').text('alhamdulillah..');	
+			}else{
+				$('#box').css("background", "orange").css("width","200px");	
+				$('#box').text('thanks..');
+			}
+		});
+	});
+
+
+	
+</script>
+<body>
+	<div id="box" style="height: 800px; width: 100px; background: yellow">
+		tess
+		
+	</div>
+	<button id="ganti">Ganti</button>
+</body>
+</html>
